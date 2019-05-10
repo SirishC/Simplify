@@ -1,20 +1,20 @@
 # Simplify | Web Application
 
-URL shortener using Django and Delpoying on Heroku 
+URL shortener using Django and Delpoying on Heroku.
 # getting started
 
-### Setting Up Virtual Environment for Django in Linux/Mac 
+### Setting Up Virtual Environment for Django in Linux/Mac.
 To set up we need to install certain libraries . 
->  **virtualenv** installation
+>  **virtualenv** installation.
 ```sh
     $ pip install virtualenv 
 ```
-> creating a virtual environment folder 
+> creating a virtual environment folder.
 ```sh
     $ virtualenv python_virtual_env
     $ cd python_virtual_env
 ```
-> activate the virtual environment 
+> activate the virtual environment.
 ```sh
     $ source bin/activate 
     (python_virtual_env)$
@@ -25,17 +25,17 @@ To set up we need to install certain libraries .
 ``` sh 
     (python_virtual_env)$pip install django 
 ```
-> we need to create a project to work on ! 
+> we need to create a project to work on. 
 ``` sh 
     (python_virtual_env)$ django-admin.py startproject Simple
     (python_virtual_env)$ cd Simple 
 ```
-> we have to create a superuser who is similar to admin !
+> we have to create a superuser who is similar to an admin.
 ``` sh 
     (python_virtual_env)$ python manage.py createsuperuser 
 ``` 
-> will prompts certain requirements like username , email , passwords ..
-**We have finished setting up our first Djando server.**
+> It will prompts certain requirements like username , email , passwords .. <br>
+**We have finish setting up our first Djando server.**
 ```sh
     (python_virtual_env)$ python manage.py runserver
 ```
