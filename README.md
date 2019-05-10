@@ -19,9 +19,9 @@ To set up we need to install certain libraries .
     $ source bin/activate 
     (python_virtual_env)$
 ```
- >we are done setting up virtual environment !
- >Now let us install Django in the virtual environment
- > **Django** installation is very simple 
+ >we are done setting up virtual environment ! <br>
+ >Now let us install Django in the virtual environment <br>
+ > **Django** installation is very simple <br>
 ``` sh 
     (python_virtual_env)$pip install django 
 ```
