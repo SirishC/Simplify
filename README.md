@@ -40,8 +40,8 @@ To set up we need to install certain libraries .
     (python_virtual_env)$ python manage.py runserver
 ```
 
-great🤟 :)
-  █▒▒▒▒▒▒▒▒▒ 10 % 
+great🤟 :)<br>
+progress █▒▒▒▒▒▒▒▒▒ 10 % 
 
 ___
 
