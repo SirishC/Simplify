@@ -2,7 +2,7 @@
 
 URL shortener using Django and Delpoying on Heroku 
 # getting started
-___
+
 ### Setting Up Virtual Environment for Django in Linux/Mac 
 To set up we need to install certain libraries . 
 >  **virtualenv** installation
@@ -42,6 +42,8 @@ To set up we need to install certain libraries .
 
 great🤟 :)
   █▒▒▒▒▒▒▒▒▒ 10 % 
+
+___
 
 # Creating an App for our project.
 
