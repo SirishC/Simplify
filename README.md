@@ -46,4 +46,13 @@ progress █▒▒▒▒▒▒▒▒▒ 10 %
 ___
 
 # Creating an App for our project.
+>Now to create an app we have to run 
+```sh
+    (python_virtual_env)$ python manage.py startapp simplify 
+```
+> it can be any name.
+### We Are All set to build a web application. Cool:)! 
+
+___
+# Web Application.
 
