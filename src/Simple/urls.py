@@ -20,5 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',HomeView.as_view()),
     # this redirect should be last.
-    re_path(r'^(?P<shortcode>[\w-]+)/$',SimpleRedirectView.as_view()),
+    re_path(r'^(?P<shortcode>[\w-]+)/$',SimpleRedirectView.as_view(),name ='scode'),
 ]
