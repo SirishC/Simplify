@@ -25,7 +25,7 @@ SECRET_KEY = 'gmo7dgj0&zl$x(vl7^go&w0$h-6q(t9&y_==r#*q1w=gb=xd=l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sirishchejerla']
 
 
 # Application definition
@@ -37,8 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    ## custom apps
-    'simplify', 
+    # third party apps
+    # 'django_hosts',
+    # custom apps
+    'simplify',
 ]
 
 MIDDLEWARE = [
@@ -52,7 +54,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'Simple.urls'
-
+# ROOT_HOSTCONF = 'Simple.hosts'
+# DEFAULT_HOST = 'www'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -120,3 +123,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# User Defined.
+SHORTCODE_MAX = 15
+SHORTCODE_MIN = 6

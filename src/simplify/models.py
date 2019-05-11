@@ -1,5 +1,8 @@
 from django.db import models
 from .utils import code_generator , create_shortcode
+from django.conf import settings
+
+SHORTCODE_MAX = getattr(settings,"SHORTCODE_MAX" , 15)
 # Create your models here.
 class simpleManager(models.Manager):
     def all(self,*args ,**kwargs):
@@ -16,7 +19,7 @@ class simpleManager(models.Manager):
         return "code count is {i}".format(i=code_count)
 class simpleURL(models.Model):
     url         = models.CharField(max_length=220, )
-    shortcode   = models.CharField(max_length=15,default='abc',unique=True,blank=True)
+    shortcode   = models.CharField(max_length=SHORTCODE_MAX,unique=True,blank=True)
     active      = models.BooleanField(default=True)
     objects = simpleManager()
     def save(self,*args,**kwargs):
