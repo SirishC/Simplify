@@ -7,5 +7,5 @@ def  validate_url(value):
     try:
         url_validator(value)
     except:
-        raise ValidationError("Invalid URL ")
+        raise ValidationError("Invalid URL")
     return value

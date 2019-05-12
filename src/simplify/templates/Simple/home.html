@@ -1,14 +1,21 @@
-<html>
-<h1>Simplify</h1>
-<h2>{{ title }}<h2>
-<body>
-  <p> A url shortener  using Django ...</p>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Simplify | URL shortener </title>
+    <link rel="stylesheet" type="text/css" href="/static/css/home.css" media="all" />
+  </head>
+  <body class="home_body">
+    <h1> Simplify.</h1>
+    <p class="discription"></p>
+    <form class="home_from" action="." method="post">{% csrf_token %}
+      {{ form.as_p }}
+      <button class="button" style="vertical-align:middle"><span>URL</span></button>
+    </form>
 
-  <form class="home_form" action="." method="post">{% csrf_token %}
-    <!-- <input type="text" name="url" placeholder="http://" required> -->
-    {{ form.as_p }}
-    <input type="submit" name="submit" value="click">
-
-  </form>
-</body>
+    <div class="footer">
+      <p>Sirish C |
+        Amrita School of Engineering, Coimbatore</p>
+    </div>
+  </body>
 </html>
