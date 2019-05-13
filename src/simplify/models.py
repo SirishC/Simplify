@@ -13,7 +13,7 @@ class simpleManager(models.Manager):
         return qs
     def refresh_code(self):
         qs = simpleURL.objects.filter(id__gte=1)
-        code_count = 0
+        code_count = 1
         for q in qs:
             q.shortcode = create_shortcode(q)
             q.save()
@@ -36,4 +36,11 @@ class simpleURL(models.Model):
 
     def get_short_url(self):
         # url_path = reverse("scode",kwargs={'shortcode': self.shortcode},host="www")
-        return "sirishchejerla:8000/"+self.shortcode
+        return "sirishchejerla:5000/"+self.shortcode
+
+
+# from django.db import models
+# class  simpleURL(models.Model):
+#     url = models.CharField(max_length=220,)
+#     def __str__(self):
+#         return str(self.url)
