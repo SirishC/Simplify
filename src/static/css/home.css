@@ -1,0 +1,72 @@
+/*
+    Author     : sirish
+*/
+
+/*custom font*/
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+
+html{
+  background-color: #3AAFA9;
+}
+h1{
+  font-family: 'Sacramento', cursive;
+  font-size: 70px;
+  color: #17252A;
+  padding-left: 70px;
+}
+body{
+  font-family: 'Quicksand',sans-serif;
+  color: #EEEEEE;
+}
+p{
+  text-align: center;
+  font-family: 'Quicksand',sans-serif;
+  font-size: 15px;
+}
+input{
+  font-size: 15px;
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px;
+  border-color:#17252A;
+}
+form{
+
+}
+label{
+  font-size: 20px;
+  color: white;
+  padding: 8px;
+}
+.button{
+  -webkit-transition-duration: 0.5s; /* Safari */
+  transition-duration: 0.5s;
+
+  width: 10%;
+  padding: 12px 20px;
+  margin-left: 80%;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 0;
+}
+.button:hover {
+  background-color: #17252A;
+  color: white;
+  border-radius: 4px;
+  border: 0;
+}
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #17252A;
+  color: white;
+  text-align: center;
+}
