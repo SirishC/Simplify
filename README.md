@@ -41,7 +41,7 @@ To set up we need to install certain libraries .
 ```
 
 great🤟 :)<br>
-progress █▒▒▒▒▒▒▒▒▒ 10 % 
+progress █████▒▒▒▒▒ 50 %
 
 ___
 
@@ -54,5 +54,37 @@ ___
 ### We Are All set to build a web application. Cool:)! 
 
 ___
-# Web Application.
+# Web Applications
+> Automatically should create a shortcode of each url <br>
+> push it into the sqlite3(initially) <br>
+> When the link already in the database same shortcode will be given. <br>
 
+progress ████████▒▒ 80 % <br>
+Awesome ! <br>
+
+# Deploy live on Heroku
+> Requirements 
+
+```sh
+(python_virtual_env)$pip install heroku 
+(python_virtual_env)$pip install django-heroku
+(python_virtual_env)$pip install psycopg2
+(python_virtual_env)$pip install whitenoise
+(python_virtual_env)$pip install gunicorn
+```
+> Create a Procfile and a requirements.txt  and configuration <br>
+*[How to do it ](https://devcenter.heroku.com/articles/deploying-python)* <br>
+> Djando app while deploying on heroku there may be errors due to static files <br>
+> Configuration of static files <br>
+*[Static files](https://docs.djangoproject.com/en/2.2/howto/static-files/)* <br>
+> Since heroku provides postgresql so we have to configure postgresql<br>
+*[Full Configuration](https://devcenter.heroku.com/articles/django-app-configuration)* <br>
+> Finally on , Heroku Server where our app is running we have to run <br>
+```sh
+    $python manage.py migrate
+```
+> #### OUR APP IS UP IN RUNNING !! AWESOME !! <br>
+#### ██████████ 100% Successfully Done ! <br>
+# References
+> [CodeForEntrepreneurs](https://www.codingforentrepreneurs.com) they are awesome
+____
