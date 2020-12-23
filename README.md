@@ -1,7 +1,7 @@
 # Simplify | Web Application
 
 URL shortener using Django and Delpoying on Heroku. <br>
-> live on : [sirishurl](sirishurl.herokuapp.com) 
+> live on : [sirishurl](http://sirishurl.herokuapp.com) 
 # getting started
 
 ### Setting Up Virtual Environment for Django in Linux/Mac.
